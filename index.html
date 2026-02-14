@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+    <!--12-->
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>أميره 👑</title>
+<link rel="stylesheet" href="style.css" />
+
+<script>
+        const titleText = " أميره 👑 ";
+        let index = 0;
+
+        function animateTitle() {
+            document.title = titleText.slice(0, index);
+            index++;
+            if (index > titleText.length) index = 0;
+            setTimeout(animateTitle, 200);
+        }
+
+        animateTitle();
+    </script>
+<style>
+
+</style>
+</head>
+
+<body>
+<!--:-->
+<script>
+
+for(let i=0;i<150;i++){
+    let s=document.createElement("div");
+    s.className="star";
+    s.style.top=Math.random()*100+"vh";
+    s.style.left=Math.random()*100+"vw";
+    s.style.animationDuration=(Math.random()*3+1)+"s";
+    document.body.appendChild(s);
+}
+</script>
+
+<div id="lockScreen">
+    <h2 style="color:gold;">ادخلي كلمة السر يا أميرتي 👑</h2>
+    <input type="password" id="password">
+    <br>
+    <button onclick="checkPass()">فتح</button>
+</div>
+
+<div class="card" id="card">
+    <div class="gold">أميره 👑💛</div>
+
+    <p>
+        يا بقرتي الحلوة 🐄💛
+        يا أم خشم الجميل 😘
+        يا أم مانيسا القمر 🌙
+        إنتِ مرَتي وكل حياتي، وإذا بدك أي شي أنا موجود،
+        بحميكي من الدنيا كلها وبكون سندك طول العمر.
+    </p>
+
+    <button onclick="openSecond()">افتحي الرسالة الكبيرة 👑</button>
+</div>
+
+<div class="second" id="second">
+<canvas id="fireworks"></canvas>
+
+<div style="position:relative; z-index:2; max-width:500px;">
+يا أميره ❤️
+اللهم وفقها في توجيهي
+وافتح عليها أبواب النجاح
+واكتب لها أعلى الدرجات
+واجعلها من المتفوقين يا رب 🤲💛
+
+بحبك حب ما إله حدود
+وبوعدك أكون إلك الحماية والأمان طول العمر 👑
+
+<br><br>
+<button onclick="closeSecond()">رجوع</button>
+</div>
+</div>
+
+<script>
+
+</script>
+<script src="app.js"></script>
+</body>
+</html>
+<!--12-->
